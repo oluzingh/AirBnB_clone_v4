@@ -8,19 +8,17 @@
 // if the checkbox is unchecked, you must remove the Amenity ID from the variable
 // update the h4 tag inside the div Amenities with the list of Amenities checked
 
-$('document').ready(init);
-
-$(document).ready(init);
-
-function init () {
-  const amenityObj = {};
-  $('.amenities .popover input').change(function () {
-    if ($(this).is(':checked')) {
-      amenityObj[$(this).attr('data-name')] = $(this).attr('data-id');
-    } else if ($(this).is(':not(:checked)')) {
-      delete amenityObj[$(this).attr('data-name')];
+document.addEvetListener('DOMContentLoaded', (event) => {
+  const amenityIDlist = [];
+  const amenityDict = {};
+  $('input:checkbox').click(function () {
+    if $(this).is(':checked')) {
+      amenityDict[$(this).attr('data-id')] = $(this).attr('data-name');
+      amenityIDlist = Object.keys(amenityDict);
+      const vals = Object.values(amenityDict);
+      $('DIV.amenities h4').append(vals);
+    } else {
+      delete amenityDict[$(this). attr('data-id')];
     }
-    const names = Object.keys(amenityObj);
-    $('.amenities h4').text(names.sort().join(', '));
-  });
-}
+  })
+});
