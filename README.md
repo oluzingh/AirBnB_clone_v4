@@ -129,7 +129,7 @@ TestBaseModel class:
 
 ## Examples of use
 ```
-vagrantAirBnB_clone$./console.py
+vagrant AirBnB_clone$./console.py
 (hbnb) help
 
 Documented commands (type help <topic>):
@@ -252,7 +252,7 @@ No known bugs at this time.
 - Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 - David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 - Olumide Micheal - [Github](https://github.com/codewithmide) / [Twitter](https://twitter.com/OlumideMicheal_)
-
+- Barona Mosweu - [Github](https://github.com/mosweubarona
 Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
